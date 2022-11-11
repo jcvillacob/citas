@@ -11,4 +11,8 @@ export class AppComponent {
   agregarCita(Cita: any) {
     this.listCitas.push(Cita);
   }
+
+  borrarCita(i: number) {
+    this.listCitas.splice(i, 1);
+  }
 }
